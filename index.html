@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SnapTok - TikTok Video Downloader</title>
+
+  <meta
+    name="description"
+    content="SnapTok is a simple online video tool for processing TikTok links."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+
+    <div class="brand">
+      <div class="brand-icon">S</div>
+      <span>SnapTok</span>
+    </div>
+
+    <button class="install-small" id="installTop">
+      📱 Install
+    </button>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="badge">
+        ⚡ FAST • SIMPLE • MOBILE
+      </div>
+
+      <h1>
+        TikTok Video<br>
+        <span>Downloader</span>
+      </h1>
+
+      <p class="subtitle">
+        Paste your video link below and get started in seconds.
+      </p>
+
+
+      <!-- INPUT -->
+      <div class="download-panel">
+
+        <div class="url-row">
+
+          <span class="url-icon">🔗</span>
+
+          <input
+            id="videoUrl"
+            type="url"
+            placeholder="Paste TikTok link here"
+            autocomplete="off"
+          >
+
+          <button id="pasteBtn" class="paste-button">
+            📋 Paste
+          </button>
+
+        </div>
+
+
+        <button id="downloadBtn" class="download-button">
+          <span>⬇</span>
+          Download
+        </button>
+
+      </div>
+
+
+      <div id="status" class="status"></div>
+
+
+      <!-- AD -->
+      <div class="ad-container">
+
+        <div class="ad-label">
+          ADVERTISEMENT
+        </div>
+
+        <div class="ad-placeholder">
+
+          <div class="ad-symbol">AD</div>
+
+          <strong>Your advertisement here</strong>
+
+          <span>
+            This space can later be connected to your ad network.
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OPTIONS -->
+  <section class="section options-section">
+
+    <h2>Choose Your Download</h2>
+
+    <p class="section-description">
+      Select the format you need.
+    </p>
+
+
+    <div class="download-options">
+
+
+      <div class="download-card">
+
+        <div class="download-card-icon">
+          🎬
+        </div>
+
+        <div>
+          <h3>Normal Video</h3>
+          <p>Standard MP4 quality</p>
+        </div>
+
+        <button
+          class="option-download"
+          data-type="normal"
+        >
+          Download
+        </button>
+
+      </div>
+
+
+      <div class="download-card popular-card">
+
+        <div class="popular-label">
+          POPULAR
+        </div>
+
+        <div class="download-card-icon">
+          🔥
+        </div>
+
+        <div>
+          <h3>HD Video</h3>
+          <p>High-quality MP4</p>
+        </div>
+
+        <button
+          class="option-download"
+          data-type="hd"
+        >
+          Download
+        </button>
+
+      </div>
+
+
+      <div class="download-card">
+
+        <div class="download-card-icon">
+          🎵
+        </div>
+
+        <div>
+          <h3>Audio</h3>
+          <p>Audio format</p>
+        </div>
+
+        <button
+          class="option-download"
+          data-type="audio"
+        >
+          Download
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INSTALL -->
+  <section class="install-section">
+
+    <div class="install-box">
+
+      <div class="install-phone">
+        📱
+      </div>
+
+      <div class="install-text">
+
+        <div class="install-tag">
+          QUICK ACCESS
+        </div>
+
+        <h2>
+          Add SnapTok to your Home Screen
+        </h2>
+
+        <p>
+          Use SnapTok like an app without downloading
+          anything from the App Store.
+        </p>
+
+        <button id="installBtn" class="install-button">
+          Add to Home Screen
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+
+    <h2>How It Works</h2>
+
+    <p class="section-description">
+      Three simple steps.
+    </p>
+
+
+    <div class="steps">
+
+      <div class="step">
+
+        <div class="step-number">
+          1
+        </div>
+
+        <div class="step-icon">
+          🔗
+        </div>
+
+        <h3>Copy the Link</h3>
+
+        <p>
+          Open TikTok and copy the link to the video.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          2
+        </div>
+
+        <div class="step-icon">
+          📋
+        </div>
+
+        <h3>Paste It</h3>
+
+        <p>
+          Paste the copied link into the box above.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          3
+        </div>
+
+        <div class="step-icon">
+          ⬇️
+        </div>
+
+        <h3>Download</h3>
+
+        <p>
+          Choose an available download option.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SEO / INFORMATION -->
+  <section class="info-section">
+
+    <div class="info-content">
+
+      <h2>
+        Download TikTok Videos Online
+      </h2>
+
+      <p>
+        SnapTok is a simple mobile-friendly web tool designed
+        to make working with video links easier.
+      </p>
+
+      <p>
+        Copy a video link, paste it into the downloader,
+        and choose an available format.
+      </p>
+
+
+      <h2>
+        Built for Mobile
+      </h2>
+
+      <p>
+        SnapTok is designed to work comfortably on phones,
+        tablets and desktop browsers.
+      </p>
+
+
+      <h2>
+        Fast and Simple
+      </h2>
+
+      <p>
+        No complicated interface. Paste your link,
+        choose an option and continue.
+      </p>
+
+
+      <div class="notice">
+
+        <strong>Important:</strong>
+
+        <span>
+          Only download or process content when you have
+          the necessary rights or permission to do so.
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+
+    <h2>Frequently Asked Questions</h2>
+
+
+    <details>
+
+      <summary>
+        Is SnapTok free?
+      </summary>
+
+      <p>
+        The website interface is free to use. Available
+        processing features may depend on the service
+        connected to the website.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Does SnapTok work on iPhone?
+      </summary>
+
+      <p>
+        Yes. The website is designed to work on modern
+        mobile browsers including Safari.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Can I add SnapTok to my Home Screen?
+      </summary>
+
+      <p>
+        Yes. On iPhone, use Safari's Share menu and choose
+        Add to Home Screen.
+      </p>
+
+    </details>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-brand">
+      SnapTok
+    </div>
+
+    <p>
+      Simple video tools for the web.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 SnapTok
+    </div>
+
+  </footer>
+
+
+  <!-- INSTALL MODAL -->
+  <div id="installModal" class="modal">
+
+    <div class="modal-box">
+
+      <button id="closeModal" class="close-modal">
+        ×
+      </button>
+
+      <div class="modal-icon">
+        📱
+      </div>
+
+      <h2>
+        Add SnapTok to Home Screen
+      </h2>
+
+      <p>
+        On your iPhone:
+      </p>
+
+      <div class="instruction">
+
+        <span>1</span>
+
+        <p>
+          Tap the <strong>Share</strong> button in Safari.
+        </p>
+
+      </div>
+
+      <div class="instruction">
+
+        <span>2</span>
+
+        <p>
+          Scroll down and tap
+          <strong>Add to Home Screen</strong>.
+        </p>
+
+      </div>
+
+      <div class="instruction">
+
+        <span>3</span>
+
+        <p>
+          Tap <strong>Add</strong>.
+        </p>
+
+      </div>
+
+      <button id="closeModalButton" class="modal-button">
+        Got it
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
